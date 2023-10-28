@@ -1,3 +1,73 @@
 body {
   font-family: Helvetica;
+  font-size: 30px;
+  margin: 0;
+}
+
+.parent {
+  background: slateblue;
+  color: #fff;
+  height: 50vh;
+  padding: 16px;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  /* flex-wrap: nowrap; */
+  align-items: flex-start;
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  flex-wrap: nowrap;
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+}
+
+.parent > div {
+  background: lightslategray;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent > div:nth-child(even) {
+  background: tomato;
+}
+
+.item-2 {
+  /* align-self: flex-start; */
+}
+
+.item-6 {
+  align-self: flex-end;
+}
+
+.item-1 {
+  order: 1;
+}
+
+.item-7 {
+  order: -1;
+}
+
+.item-5 {
+  order: 1;
+}
+
+.item-9 {
+  order: -1;
+}
+
+.item-3 {
+  flex-grow: 1;
+}
+
+.item-8 {
+  flex-grow: 2;
 }
